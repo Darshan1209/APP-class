@@ -1,0 +1,123 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f8f5f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Container */
+.container {
+    display: flex;
+    width: 900px;
+    max-width: 100%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    overflow: hidden;
+    background: #ffffff;
+}
+
+/* Left Panel */
+.left-panel {
+    background: #ffe4c4;
+    padding: 40px;
+    text-align: center;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.left-panel img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Right Panel */
+.right-panel {
+    width: 50%;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Login Box */
+.login-box {
+    text-align: center;
+    width: 100%;
+}
+
+/* Input Group */
+.input-group {
+    display: flex;
+    align-items: center;
+    background: #f3f3f3;
+    border-radius: 10px;
+    padding: 12px;
+    margin-bottom: 20px;
+    width: auto;
+    
+}
+.input-group i {
+    margin-right: 12px;
+    color: #6b7280;
+}
+.input-group input {
+    border: none;
+    background: transparent;
+    outline: none;
+    width: 100%;
+}
+
+/* Button */
+.btn {
+    background: #ff7f50;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.3s;
+    width: 100%;
+}
+.btn:hover {
+    background: #e06c3a;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 100%;
+        max-width: 450px;
+    }
+    .left-panel {
+        width: auto;
+
+    }
+    .right-panel {
+        width: auto;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        width: 100%;
+        border-radius: 0;
+    }
+    .left-panel {
+        padding: 20px;
+        margin: 10px;
+    }
+    .right-panel {
+        padding: 10px;
+        margin: 10px;
+    }
+}
